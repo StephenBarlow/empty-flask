@@ -12,17 +12,24 @@ uv sync
 
 ## Run
 
-Run the Flask application:
+Run the Flask development server:
 
 ```bash
 uv run flask --app hello run
 ```
 
-Or activate the virtual environment:
+Run with Gunicorn (production):
+
+```bash
+uv run gunicorn hello:app
+```
+
+Or activate the virtual environment first:
 
 ```bash
 source .venv/bin/activate
-flask --app hello run
+flask --app hello run        # development
+gunicorn hello:app           # production
 ```
 
 ## Add Dependencies
