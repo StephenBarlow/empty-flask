@@ -1,0 +1,9 @@
+[project]
+name = "empty-flask"
+version = "0.1.0"
+description = "A simple Flask application"
+requires-python = ">=3.11"
+dependencies = [
+    "flask==3.0.3",
+    "uwsgi==2.0.25.1",
+]
